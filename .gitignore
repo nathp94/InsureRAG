@@ -5,8 +5,9 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 
-# --- Documentation locale ---------------------------------------------
+# --- Documentation locale (non versionnee) -----------------------------
 explain.md
+MEMORY.md
 
 # --- Environnement ------------------------------------------------------
 .venv/
