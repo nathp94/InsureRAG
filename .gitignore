@@ -1,0 +1,19 @@
+# --- Donnees non versionnees -------------------------------------------
+# on garde le dossier vide (pour le .gitkeep) mais pas son contenu
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# --- Documentation locale ---------------------------------------------
+explain.md
+
+# --- Environnement ------------------------------------------------------
+.venv/
+venv/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/

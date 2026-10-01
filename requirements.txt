@@ -1,0 +1,21 @@
+# InsureRAG V1 - dependances
+# Le LLM est servi par Ollama (aucune cle API, aucun GPU requis pour le LLM).
+
+# --- Parsing / chunking --------------------------------------------------
+docling>=2.129.0
+transformers>=4.48          # tokenizer aligne sur le HybridChunker
+torch>=2.6.0                # detecte CUDA si dispo (docling + sentence-transformers)
+
+# --- Retrieval -----------------------------------------------------------
+sentence-transformers>=4.48 # embeddings denses + cross-encoder de reranking
+qdrant-client>=1.12.0       # base vectorielle locale (mode fichier)
+rank-bm25>=0.2.2            # index lexical
+numpy>=1.26
+
+# --- Generation (Ollama) -------------------------------------------------
+requests>=2.31              # client HTTP vers http://localhost:11434
+
+# --- Application / config / tests ---------------------------------------
+streamlit>=1.40
+python-dotenv>=1.0          # lecture du .env
+pytest>=8.0
